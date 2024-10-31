@@ -1,0 +1,16 @@
+version: '3'
+services:
+  churn_model_service:
+    build: .
+    container_name: churn_model
+    volumes:
+      - .:/app
+    command: python model_prediction.py
+    environment:
+      - ENV=production
+    networks:
+      - churn_network
+
+networks:
+  churn_network:
+    driver: bridge
