@@ -10,7 +10,7 @@
 ## 2. Opis danych:
 **Opis zadania**: Import danych, które zawierają cechy demograficzne klientów, historię korzystania z usług, plany taryfowe oraz status churn.
 
-**Skrypt**: `data_import.py`
+**Skrypt**: `data_import.ipynb`
 - **Opis**: W tym skrypcie dane klientów są wczytywane z pliku CSV (`internet_service_churn.csv`) i przechowywane w Pandas DataFrame. Wykonano wstępną analizę struktury danych.
 
 ---
@@ -26,7 +26,7 @@
 ## 4. Wstępne przetwarzanie danych:
 **Opis zadania**: Przetwarzanie brakujących danych, kodowanie zmiennych kategorycznych i normalizacja cech numerycznych.
 
-**Skrypt**: `data_preprocessing.py`
+**Skrypt**: `data_preprocessing.ipynb`
 - **Opis**: Skrypt ten zajmuje się wstępnym przetwarzaniem danych, uzupełniając brakujące wartości za pomocą `SimpleImputer`, kodując zmienne kategoryczne (np. `OneHotEncoder`) oraz normalizując cechy numeryczne za pomocą `StandardScaler`.
 
 ---
@@ -35,10 +35,10 @@
 **Opis zadania**: Wybór algorytmu uczenia maszynowego (RandomForestClassifier), trening modelu i ocena jego wydajności (Accuracy, Recall, Precision, F1 Score).
 
 **Skrypty**:
-1. **`train_model.py`**
+1. **`train_model.ipynb`**
    - **Opis**: Skrypt trenuje model RandomForestClassifier na przetworzonych danych i zapisuje go za pomocą pickle do pliku `model.pkl`.
    
-2. **`model_evaluation.py`**
+2. **`model_evaluation.ipynb`**
    - **Opis**: Skrypt ocenia wydajność modelu, obliczając wskaźniki takie jak Accuracy, Recall, Precision i F1 Score. Zawiera również wizualizację macierzy konfuzji i krzywej ROC.
 
 ---
@@ -47,7 +47,7 @@
 **Opis zadania**: Przygotowanie procedury przyjmowania danych nowego klienta, przetwarzanie ich przez model i generowanie wyniku.
 
 **Skrypty**:
-1. **`model_prediction.py`**
+1. **`model_prediction.ipynb`**
    - **Opis**: Ten skrypt wczytuje zapisany model (`model.pkl`), przyjmuje dane nowego klienta i dokonuje przewidywania, czy klient ma wysokie czy niskie prawdopodobieństwo rezygnacji.
    
 2. **Wyniki**: Skrypt wyświetla informację o prawdopodobieństwie rezygnacji w formie tekstowej („Customer is likely/unlikely to churn”).
@@ -66,9 +66,9 @@
 **Opis zadania**: Jakość przetwarzania danych, wybór parametrów modelu, analiza wyników, funkcjonalność i konteneryzacja.
 
 **Skrypty**:
-- **`data_preprocessing.py`**: przetwarza dane.
-- **`train_model.py`**: wybiera parametry i trenuje model.
-- **`model_evaluation.py`**: analizuje wyniki modelu.
+- **`data_preprocessing.ipynb`**: przetwarza dane.
+- **`train_model.ipynb`**: wybiera parametry i trenuje model.
+- **`model_evaluation.ipynb`**: analizuje wyniki modelu.
 - **`Dockerfile`** i **`docker-compose.yml`**: umożliwiają uruchomienie konteneryzacji.
 
 ---
@@ -136,10 +136,10 @@
 ---
 
 ## Podsumowanie:
-- **Skrypty do analizy danych**: `data_analysis.py`
-- **Skrypty do przetwarzania danych**: `data_preprocessing.py`
-- **Skrypty do trenowania modelu**: `train_model.py`
-- **Skrypty do oceny modelu**: `model_evaluation.py`
-- **Skrypty do przewidywania**: `model_prediction.py`
+- **Skrypty do analizy danych**: `data_analysis.ipynb`
+- **Skrypty do przetwarzania danych**: `data_preprocessing.ipynb`
+- **Skrypty do trenowania modelu**: `train_model.ipynb`
+- **Skrypty do oceny modelu**: `model_evaluation.ipynb`
+- **Skrypty do przewidywania**: `model_prediction.ipynb`
 - **Dockerfile i Docker Compose**: `Dockerfile`, `docker-compose.yml`
 
