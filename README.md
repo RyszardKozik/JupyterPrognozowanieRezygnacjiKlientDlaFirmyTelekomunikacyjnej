@@ -8,7 +8,7 @@
 ---
 
 ## 2. Opis danych:
-**Opis zadania**: Import danych, które zawierają cechy demograficzne klientów, historię korzystania z usług, plany taryfowe oraz status churn.
+**Opis zadania**: Import danych, które zawierają cechy demograficzne klientów, historię korzystania z usług, plany taryfowe oraz status "churn".
 
 **Skrypt**: `data_import.ipynb`
 - **Opis**: W tym skrypcie dane klientów są wczytywane z pliku CSV (`internet_service_churn.csv`) i przechowywane w Pandas DataFrame. Wykonano wstępną analizę struktury danych.
@@ -18,7 +18,7 @@
 ## 3. Analiza danych (EDA):
 **Opis zadania**: Przeprowadzenie analizy eksploracyjnej danych, wizualizacja rozkładów, identyfikacja brakujących wartości, analiza korelacji.
 
-**Skrypt**: `data_analysis.py`
+**Skrypt**: `data_analysis.ipynb`
 - **Opis**: W tym skrypcie wykorzystano Pandas, Matplotlib i Seaborn do analizy danych, w tym do tworzenia wykresów rozkładu cech, takich jak wiek i korzystanie z usług. Skrypt ten identyfikuje brakujące wartości i analizuje korelacje między zmiennymi.
 
 ---
